@@ -1,0 +1,110 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SofiaPro", Arial, Helvetica, sans-serif;
+}
+
+.testimonials__testimonials-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(208.18deg, #2b2b2b 9.05%, #000 76.74%);
+  color: #fff;
+  padding: 4rem;
+  border-radius: 1.5rem;
+  min-width: 2rem;
+  height: 20rem;
+}
+.testimonials__testimonial {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "SofiaPro", Arial, Helvetica, sans-serif;
+}
+.testimonials__testimonial[data-active] {
+  opacity: 1;
+  transition-delay: 0ms;
+  z-index: 1;
+}
+.testimonials__testimonial__author {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 50%;
+}
+.testimonials__testimonial__author-image {
+  border: solid 0.4rem #d6d6d6;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  max-width: 9.375rem;
+}
+.testimonials__testimonial__author-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.testimonials__testimonial__author-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.6rem;
+}
+.testimonials__testimonial__content {
+  padding-right: 8rem;
+}
+.testimonials__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.testimonials__pagination__arrow {
+  color: #1b1b1b;
+  font-size: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  cursor: pointer;
+  transition: color ease 0.6s;
+}
+.testimonials__pagination__arrow:hover {
+  color: #000;
+}
+.testimonials__pagination__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials__pagination__dot {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 10px;
+  height: 10px;
+  background: #1b1b1b;
+  opacity: 0.3;
+  border-radius: 100%;
+  margin-top: 0.5rem;
+}
+.testimonials__pagination__dot--active {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  opacity: 1;
+  border-radius: 100%;
+  margin-top: 0.5rem;
+}/*# sourceMappingURL=carousel.css.map */

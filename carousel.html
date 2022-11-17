@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carousel</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="carousel.css" />
+  </head>
+  <body>
+    <div class="testimonials" data-carousel>
+      <div class="testimonials__testimonials-container" data-slides>
+        <div class="testimonials__testimonial" data-active>
+          <div class="testimonials__testimonial__author">
+            <img
+              src="./images/dude.jpg"
+              class="testimonials__testimonial__author-image"
+            />
+            <p class="testimonials__testimonial__author-info">
+              <span class="testimonials__testimonial__author-name"
+                >Edward Newgate
+              </span>
+              <span class="testimonials__testimonial__author-company"
+                >Founder Circle</span
+              >
+            </p>
+          </div>
+          <p class="testimonials__testimonial__content">
+            “Our dedicated patient engagement app and web portal allow you to
+            access information instantaneously (no tedeous form, long calls, or
+            administrative hassle) and securely”
+          </p>
+        </div>
+        <div class="testimonials__testimonial">
+          <div class="testimonials__testimonial__author">
+            <img
+              src="./images/girl.jpg"
+              class="testimonials__testimonial__author-image"
+            />
+            <p class="testimonials__testimonial__author-info">
+              <span class="testimonials__testimonial__author-name"
+                >Helen Parks
+              </span>
+              <span class="testimonials__testimonial__author-company"
+                >Medicine 4all</span
+              >
+            </p>
+          </div>
+          <p class="testimonials__testimonial__content">
+            “I don’t usually take prescription medication but have had to
+            recently due to medical complications from an emergency hospital
+            visit. When I do I usually research the med and it’s side effects. ”
+          </p>
+        </div>
+        <div class="testimonials__testimonial">
+          <div class="testimonials__testimonial__author">
+            <img
+              src="./images/man.jpg"
+              class="testimonials__testimonial__author-image"
+            />
+            <p class="testimonials__testimonial__author-info">
+              <span class="testimonials__testimonial__author-name"
+                >James Peter
+              </span>
+              <span class="testimonials__testimonial__author-company"
+                >Ahead Pharm</span
+              >
+            </p>
+          </div>
+          <p class="testimonials__testimonial__content">
+            “Whatever be your medicine requirement, you are sure to locate it in
+            this online pharmacy. All you have to do then is to add it to your
+            cart and place the order and get your order delivered quickly. ”
+          </p>
+        </div>
+        <div class="testimonials__testimonial">
+          <div class="testimonials__testimonial__author">
+            <img
+              src="./images/vasilis.jpg"
+              class="testimonials__testimonial__author-image"
+            />
+            <p class="testimonials__testimonial__author-info">
+              <span class="testimonials__testimonial__author-name"
+                >Vasilis Pafiliaris
+              </span>
+              <span class="testimonials__testimonial__author-company"
+                >Straktor Media</span
+              >
+            </p>
+          </div>
+          <p class="testimonials__testimonial__content">
+            “Implementing Figma and Adobe XD designs in custom code and
+            deploying it to dynamic WordPress websites. Pays attention to detail
+            and likes coding and making music.”
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonials__pagination">
+        <div
+          class="testimonials__pagination__arrow testimonials__pagination__arrow--left"
+          data-carousel-btn="prev"
+        >
+          ←
+        </div>
+        <div class="testimonials__pagination__dots" data-pagination>
+          <div
+            class="testimonials__pagination__dot testimonials__pagination__dot--active"
+            data-active
+          ></div>
+          <div class="testimonials__pagination__dot"></div>
+          <div class="testimonials__pagination__dot"></div>
+          <div class="testimonials__pagination__dot"></div>
+        </div>
+        <div
+          class="testimonials__pagination__arrow testimonials__pagination__arrow--right"
+          data-carousel-btn="next"
+        >
+          →
+        </div>
+      </div>
+    </div>
+
+    <script src="carousel.js"></script>
+  </body>
+</html>
